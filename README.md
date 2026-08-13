@@ -88,22 +88,28 @@ registro y sin caducidad: [`demo/index.html`](demo/index.html).
 
 *Se regenera con `node build-demo.js` a partir de `../base/` y los datos de ejemplo.*
 
+> ⚠️ **Temporal**: el enlace a la demo es provisional. Cuando la web esté desplegada
+> apuntará a su URL definitiva.
+
 ---
 
-## 📊 ¿Y la competencia?
+## 💪 Ventajas de Komandi
 
-| | **Komandi** | Apps TPV hostelería | Carta QR con comisión | Delivery |
-|---|---|---|---|---|
-| Precio | desde 14,99 €/mes | 30–80+ €/mes | «gratis» + comisión | 15–30 % por pedido |
-| Comisión por pedido | ❌ No | No | Sí | Sí |
-| TPV / terminal nuevo | ❌ No | Suele | No | No |
-| Comanda cajero → cocina | ✅ Sí | A veces | No | No |
-| Ticket en cocina en vivo | ✅ Sí | Varía | No | No |
-| Montaje | 10 min | Horas/días | Varía | Semanas |
-| Carta editable por el dueño | ✅ Sí | A veces | Varía | No |
-
-Nadie ofrece el combo: **tarifa plana baja + sin comisión + sin TPV + comanda
-cajero→cocina en vivo + carta editable + montaje en 10 minutos**.
+- **💰 Precio de verdad bajo**: menos que un pedido para llevar al mes. Tarifa
+  plana, sin letra pequeña.
+- **🚫 Sin comisión por pedido**: el margen se queda en tu negocio, no se va a una
+  app de delivery.
+- **📱 Sin TPV ni terminales**: usas los móviles y tablets que ya tienes. Nada que
+  comprar, nada que instalar (PWA).
+- **⚡ En marcha en 10 minutos**: abres la URL, pones el PIN y ya funciona.
+- **🍳 Comanda cajero → cocina en vivo**: la cocina ve el ticket al segundo, sin
+  gritos ni papeles que se pierden.
+- **✏️ Carta editable por el dueño**: productos, precios y tamaños desde el móvil,
+  sin saber programar.
+- **📶 Funciona sin internet**: modo local + PWA offline. Una caída de red no para
+  el negocio.
+- **🔒 Tus datos son tuyos**: respaldados, protegidos por PIN y solo los ves tú.
+- **🤝 Sin permanencia ni contrato**: y el primer mes es gratis.
 
 ---
 
@@ -126,7 +132,15 @@ datos en JSON. Coste de infraestructura casi nulo.
 
 ## 📬 Contacto
 
-WhatsApp · Instagram · Email — horario de **10:00 a 20:00**.
+Los datos de contacto (WhatsApp, Instagram, email) y el horario de atención se
+publican en la **web**. De momento, el enlace es temporal y todavía no lleva a
+ningún sitio:
 
-> ⚠️ Los datos de contacto, la URL final y las RRSS se configuran en `app.js`
-> (`SITIO`). Actualmente usan *placeholders* a la espera de las cuentas reales.
+**[🌐 Ver la web](https://tudominio-pendiente.com)** — *enlace temporal, se
+actualizará con la URL definitiva cuando la web esté desplegada.*
+
+---
+
+## 📄 Licencia
+
+MIT. Libre para copiar, usar y contribuir.
