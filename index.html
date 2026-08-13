@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Komandi: app de comandas para comida para llevar — kebab, hamburgueserías, pizzerías y más. Pide desde el móvil que ya tienes, la cocina ve el ticket al momento. Sin terminales, sin comisiones, 1er mes gratis. Planes desde 14,99 €/mes.">
+<meta name="theme-color" content="#16100d">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Komandi">
+<title>Komandi · Comandas de tu negocio en el móvil que ya tienes</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Komandi">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Komandi">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Komandi · Comandas de tu negocio en el móvil que ya tienes">
+<meta property="og:description" content="App de comandas para comercios de barrio: carta, pedido y ticket a cocina al momento. Sin terminales, sin comisiones, primer mes gratis. Planes desde 14,99 €/mes.">
+<meta property="og:url" content="https://TUUSUARIO.github.io/kebapps/">
+<meta property="og:image" content="https://TUUSUARIO.github.io/kebapps/assets/logo-big.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Logo de Komandi, la app de comandas para tu negocio de comida para llevar">
+<meta property="og:price:amount" content="14.99">
+<meta property="og:price:currency" content="EUR">
+<meta property="og:product:availability" content="in stock">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Komandi · Comandas de tu negocio en el móvil que ya tienes">
+<meta name="twitter:description" content="App de comandas para comercios de barrio. Sin terminales, sin comisiones, primer mes gratis. Planes desde 14,99 €/mes.">
+<meta name="twitter:image" content="https://TUUSUARIO.github.io/kebapps/assets/logo-big.png">
+<meta name="twitter:image:alt" content="Logo de Komandi, la app de comandas para tu negocio de comida para llevar">
+<link rel="canonical" href="https://TUUSUARIO.github.io/kebapps/">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://TUUSUARIO.github.io/kebapps/#website",
+      "url": "https://TUUSUARIO.github.io/kebapps/",
+      "name": "Komandi",
+      "description": "App de comandas para comida para llevar: kebab, hamburgueserías, pizzerías y más.",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://TUUSUARIO.github.io/kebapps/#organizacion",
+      "name": "Komandi",
+      "url": "https://TUUSUARIO.github.io/kebapps/",
+      "logo": "https://TUUSUARIO.github.io/kebapps/assets/logo.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+34000000000",
+          "email": "hola@komandi.es",
+          "availableLanguage": ["es"]
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://TUUSUARIO.github.io/kebapps/#app",
+      "name": "Komandi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+      "browserRequirements": "Requiere un navegador web moderno",
+      "description": "App de comandas para negocios de comida para llevar: carta, asistente de pedido, cocina en vivo, resumen y estadísticas por día.",
+      "offers": {
+        "@type": "Offer",
+        "price": "14.99",
+        "priceCurrency": "EUR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://TUUSUARIO.github.io/kebapps/#producto",
+      "name": "Komandi — comandas para tu negocio",
+      "description": "App de comandas para comida para llevar: carta, pedido y ticket a cocina al momento. Sin terminales, sin comisiones, primer mes gratis.",
+      "image": "https://TUUSUARIO.github.io/kebapps/assets/logo.png",
+      "brand": { "@type": "Brand", "name": "Komandi" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "14.99",
+        "highPrice": "149.99",
+        "offerCount": "2",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Plan Mensual",
+            "price": "14.99",
+            "priceCurrency": "EUR",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "description": "14,99 €/mes, alta 29,99 € una vez, primer mes gratis, sin permanencia."
+          },
+          {
+            "@type": "Offer",
+            "name": "Plan Anual",
+            "price": "149.99",
+            "priceCurrency": "EUR",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "description": "149,99 €/año: 12 meses al precio de 10, alta incluida, sin permanencia."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://TUUSUARIO.github.io/kebapps/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Vale para mi negocio aunque no sea un kebab?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Sirve para cualquier negocio que tome el pedido en el mostrador y lo pase a cocina: kebab, hamburguesería, pizzería, pollo asado, bocadillería, tacos, comida rápida, food truck… La carta se adapta a lo que vendas." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo pruebo la demo? ¿Cuánto dura?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Es una demo gratuita sin caducidad: entras cuando quieras, es la app real con un menú de ejemplo, funciona en el móvil, la tablet o el PC y no hay que registrarse. Cuando te guste, la montamos con tu carta." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito internet en el negocio?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No para lo básico. La app funciona en modo local sin conexión: la carta, el pedido y el resumen siguen funcionando. Con internet, las pantallas de cajero y cocina se sincronizan en vivo. Si la cocina está en otro dispositivo y no hay red, las comandas quedan guardadas en el de caja hasta que vuelva la conexión." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué móvil o dispositivo necesito?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cualquiera con Chrome, Safari o Edge: Android, iPhone, tablet, o un PC con Windows, macOS o Linux. Se abre en el navegador y se añade a la pantalla de inicio como una app normal, sin pasar por la tienda de aplicaciones." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se configura y quién lo hace?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Al darte de alta montamos todo contigo: nombre, menú, precios, tamaños, PIN y enlaces. Tú nos cuentas qué vende tu negocio (en persona si podemos acercarnos, o por WhatsApp, videollamada o email si estás lejos) y te ayudamos a dejarlo bien montado. Después, el menú lo editas tú mismo desde el ⚙️ del móvil. Para activar opciones de configuración (cambiar el PIN, quitar el acceso a un móvil, renovar por pérdida…), nos lo pides y lo hacemos al momento." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Y si hay cosas que no salen en la carta: salsas, extras o recargos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Es lo habitual. En la carta no siempre aparecen todas las opciones posibles (salsas que se cobran, complementos, tamaños con recargo…), y ahí es donde más ayuda hace falta. Por eso el montaje lo hacemos juntos: te preguntamos por esas cosas que no están escritas, las reflejamos en la app y cobras todo lo que cobras en el mostrador. Si tienes dudas sobre cómo montar algo, te guiamos paso a paso." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Y si me equivoco de precio?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Lo cambias en 10 segundos desde el ⚙️ del móvil y la carta se actualiza al momento en todas las pantallas." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo cambiar el PIN?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí, cuando quieras. Además revocamos el acceso de los móviles antiguos al instante, pidiendo el PIN." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si se me pierde o se rompe el móvil?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nada. Los datos están respaldados. Nos pides la renovación, quitamos el acceso al móvil perdido y abres otro móvil con el PIN de la tienda." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo contacto con soporte?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Por WhatsApp, Instagram o email en horario de 10:00 a 20:00. Contestamos rápido y en español." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Y si necesito algo que la app no hace?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Te hacemos presupuesto aparte. Cuéntanos qué necesitas por email o WhatsApp, lo valoramos y te damos un presupuesto cerrado antes de empezar. En la tarjeta de precios tienes una calculadora con un presupuesto aproximado." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay contrato o permanencia?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Sin permanencia, sin comisión por pedido y el primer mes es gratis." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="cab">
+  <a class="brand" href="#inicio">
+    <img src="assets/logo.png" alt="" width="40" height="40">
+    <span id="nombre-marca">Komandi</span>
+  </a>
+  <a class="btn" data-demo>Probar gratis</a>
+</header>
+
+<!-- 1 · Hero -->
+<section class="hero" id="inicio">
+  <div class="hero-texto reveal-grupo">
+    <h1 class="reveal">La comanda de tu negocio, en el móvil que ya tienes.</h1>
+    <p class="sub reveal">El comandero digital de tu negocio: carta, pedido y ticket a cocina al momento. Sin terminales, sin comisiones, en marcha en 10 minutos.</p>
+    <div class="ctas reveal">
+      <a class="btn btn-primario btn-lg" data-demo>▶ Probar gratis</a>
+      <a class="btn btn-borde btn-lg" data-wa>💬 Montar la mía</a>
+    </div>
+    <ul class="chips reveal" aria-label="Ventajas">
+      <li>Sin permanencia</li>
+      <li>Sin comisión por pedido</li>
+      <li>Primer mes gratis</li>
+      <li>Funciona sin internet</li>
+      <li>Móvil, tablet o PC</li>
+    </ul>
+  </div>
+  <figure class="tel hero-tel reveal">
+    <img src="assets/capturas/01-carta.webp" alt="La app abierta en un móvil: la carta del negocio por categorías" loading="eager">
+    <figcaption>La carta del negocio, en el móvil del camarero</figcaption>
+  </figure>
+</section>
+
+<!-- 2 · Para qué negocios -->
+<section class="seccion" id="negocios">
+  <h2 class="reveal">Hecho para negocios de comida para llevar</h2>
+  <p class="introduccion reveal">Si tomas el pedido en el mostrador y la cocina necesita verlo, te vale. Da igual lo que vendas:</p>
+  <ul class="chips negocios reveal" aria-label="Tipos de negocio compatibles">
+    <li>🥙 Kebab / Döner</li>
+    <li>🍔 Hamburguesería</li>
+    <li>🍕 Pizzería (para llevar)</li>
+    <li>🍗 Pollo asado o frito</li>
+    <li>🥪 Bocadillería / sandwichería</li>
+    <li>🌮 Tacos y mexicano</li>
+    <li>🍟 Comida rápida en general</li>
+    <li>🥞 Crêpes / gofres</li>
+    <li>🥡 Takeaway / para llevar</li>
+    <li>🚚 Food truck</li>
+  </ul>
+</section>
+
+<!-- 3 · Problema -->
+<section class="seccion" id="problema">
+  <h2>¿Te suena?</h2>
+  <div class="grid3 reveal-grupo">
+    <article class="card reveal">
+      <div class="emoji">🧠</div>
+      <h3>Comandas de memoria</h3>
+      <p>En las horas punta se olvida a quién es cada pedido, qué lleva y cuánto es.</p>
+    </article>
+    <article class="card reveal">
+      <div class="emoji">✏️</div>
+      <h3>Errores al cobrar</h3>
+      <p>Sumar a mano y apuntar en papel acaba en cuentas mal y clientes enfadados.</p>
+    </article>
+    <article class="card reveal">
+      <div class="emoji">🔥</div>
+      <h3>La cocina no ve el pedido</h3>
+      <p>El cocinero pregunta, se grita por encima de la barra y el ticket se pierde.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 4 · Cómo funciona -->
+<section class="seccion" id="como">
+  <h2>Cómo funciona</h2>
+  <div class="pasos reveal-grupo">
+    <article class="paso reveal">
+      <figure class="tel">
+        <img src="assets/capturas/01-carta.webp" alt="Pantalla de la carta por categorías" loading="lazy">
+      </figure>
+      <div class="paso-texto">
+        <span class="paso-num">1</span>
+        <h3>Abre la web en el móvil</h3>
+        <p>Nada que instalar ni que comprar. Se añade a la pantalla de inicio como una app normal.</p>
+      </div>
+    </article>
+    <article class="paso reveal">
+      <figure class="tel">
+        <img src="assets/capturas/02-wizard.webp" alt="Asistente de pedido: tamaño, carne y extras" loading="lazy">
+      </figure>
+      <div class="paso-texto">
+        <span class="paso-num">2</span>
+        <h3>Toma el pedido en 30 segundos</h3>
+        <p>Opciones, complementos y extras con el total calculado al momento. Sin sumar de cabeza.</p>
+      </div>
+    </article>
+    <article class="paso reveal">
+      <figure class="tel">
+        <img src="assets/capturas/04-cocina.webp" alt="Pestaña Cocina con tickets: por hacer, en marcha y completadas" loading="lazy">
+      </figure>
+      <div class="paso-texto">
+        <span class="paso-num">3</span>
+        <h3>La cocina lo ve al momento</h3>
+        <p>El ticket sale en vivo en el móvil del cocinero: por hacer, en marcha, hecha.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 5 · Funciona en cualquier dispositivo -->
+<section class="seccion" id="dispositivos">
+  <h2>Funciona en el dispositivo que ya tienes</h2>
+  <p class="introduccion">Móvil, tablet o PC. Y da igual el sistema: Android, iPhone, Windows, macOS o Linux. Si tiene un navegador, funciona.</p>
+  <div class="grid3 reveal-grupo">
+    <article class="card reveal">
+      <div class="emoji">📱</div>
+      <h3>Móvil</h3>
+      <p>El comandero toma el pedido en la mano. Android o iPhone, nada que instalar: se añade a la pantalla de inicio como una app.</p>
+    </article>
+    <article class="card reveal">
+      <div class="emoji">💻</div>
+      <h3>Tablet</h3>
+      <p>Para el mostrador o la cocina, con la carta a un tamaño más cómodo. Se sincroniza al momento con los demás dispositivos.</p>
+    </article>
+    <article class="card reveal">
+      <div class="emoji">🖥️</div>
+      <h3>PC</h3>
+      <p>La cocina en pantalla grande, estilo tablero: pedidos por hacer, en marcha y hechas de un vistazo. En Windows, Mac o Linux.</p>
+    </article>
+  </div>
+  <ul class="chips" aria-label="Compatibilidad de sistemas y navegadores">
+    <li>Android</li>
+    <li>iPhone (iOS)</li>
+    <li>Windows</li>
+    <li>macOS</li>
+    <li>Linux</li>
+    <li>Chrome</li>
+    <li>Safari</li>
+    <li>Edge</li>
+    <li>Nada que instalar</li>
+  </ul>
+</section>
+
+<!-- 6 · Capturas -->
+<section class="seccion" id="capturas">
+  <h2>Así se ve en el negocio</h2>
+  <p class="introduccion">Capturas de la app en uso real, con datos de un kebab de verdad.</p>
+  <div class="galeria reveal-grupo">
+    <figure class="tel reveal">
+      <img src="assets/capturas/01-carta.webp" alt="Carta por categorías" loading="lazy">
+      <figcaption>Carta por categorías</figcaption>
+    </figure>
+    <figure class="tel reveal">
+      <img src="assets/capturas/02-wizard.webp" alt="Asistente de tamaño y carne" loading="lazy">
+      <figcaption>Asistente de pedido</figcaption>
+    </figure>
+    <figure class="tel reveal">
+      <img src="assets/capturas/03-resumen.webp" alt="Resumen de la comanda con total" loading="lazy">
+      <figcaption>Resumen con total</figcaption>
+    </figure>
+    <figure class="tel reveal">
+      <img src="assets/capturas/04-cocina.webp" alt="Cocina con tickets en vivo" loading="lazy">
+      <figcaption>Ticket en vivo en cocina</figcaption>
+    </figure>
+    <figure class="tel reveal">
+      <img src="assets/capturas/05-admin.webp" alt="Edición de precios y productos" loading="lazy">
+      <figcaption>Editar precios desde el móvil</figcaption>
+    </figure>
+    <figure class="tel reveal">
+      <img src="assets/capturas/06-pin.webp" alt="Pantalla de PIN de la tienda" loading="lazy">
+      <figcaption>Acceso protegido por PIN</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 7 · Precios -->
+<section class="seccion" id="precios">
+  <h2>Menos que un pedido para llevar al mes</h2>
+  <p class="banner">Primer mes gratis · Sin permanencia · Sin comisión por pedido</p>
+  <div class="grid3 precios reveal-grupo">
+    <article class="card plan reveal">
+      <span class="plan-ico">📅</span>
+      <h3>Mensual</h3>
+      <p class="precio">14,99 <span>€/mes</span></p>
+      <ul>
+        <li>Alta: 29,99 € (una vez)</li>
+        <li>Primer mes gratis</li>
+        <li>Sin permanencia</li>
+      </ul>
+      <a class="btn btn-borde btn-ancho" data-plan="mensual">💬 Elegir Mensual</a>
+    </article>
+    <article class="card plan destacado reveal">
+      <span class="etiqueta">⭐ Más ahorro</span>
+      <span class="plan-ico">🗓</span>
+      <h3>Anual</h3>
+      <p class="precio">149,99 <span>€/año</span></p>
+      <ul>
+        <li>12 meses al precio de 10</li>
+        <li>Alta incluida</li>
+        <li>Sin permanencia</li>
+      </ul>
+      <a class="btn btn-primario btn-ancho" data-plan="anual">💬 Elegir Anual</a>
+    </article>
+    <article class="card plan plan-dev reveal">
+      <span class="plan-ico">🛠</span>
+      <h3>Desarrollo a medida</h3>
+      <p class="plan-sub">¿La app no hace algo que necesitas? Monta tu presupuesto aproximado en 10 segundos:</p>
+      <div class="calc" data-calc>
+        <label class="calc-op">
+          <input type="checkbox" data-calc-horas="1">
+          <span>Ajuste visual pequeño: retocar colores, textos, fotos u orden</span>
+        </label>
+        <label class="calc-op">
+          <input type="checkbox" data-calc-horas="3">
+          <span>Funcionalidad nueva mediana: una pantalla o vista nueva para tu negocio</span>
+        </label>
+        <label class="calc-op">
+          <input type="checkbox" data-calc-horas="6">
+          <span>Integración con un servicio: WhatsApp, impresora o pago online</span>
+        </label>
+        <label class="calc-op">
+          <input type="checkbox" data-calc-horas="10">
+          <span>Webapp avanzada para tus clientes: pedidos online, recogida o delivery</span>
+        </label>
+        <label class="calc-op">
+          <input type="checkbox" data-calc-horas="15">
+          <span>Proyecto propio desde cero, en la línea de Komandi</span>
+        </label>
+        <p class="calc-resultado">
+          <span data-calc-vacio>Marca lo que necesitas para ver tu presupuesto aproximado</span>
+          <span data-calc-valor>Desde <strong data-calc-total>~30 €</strong> <small>aprox.</small></span>
+        </p>
+      </div>
+      <a class="btn btn-primario btn-ancho" data-dev-wa>💬 Pedir presupuesto</a>
+      <a class="btn btn-borde btn-ancho" data-dev-email>✉️ Por email</a>
+    </article>
+  </div>
+  <div class="incluye reveal">
+    <h3>Todos los planes incluyen</h3>
+    <ul>
+      <li>✅ La app completa: carta, asistente de pedido, cocina en vivo, resumen y estadísticas por día.</li>
+      <li>📱 Funciona en cualquier dispositivo y sistema: Android, iPhone, tablet o PC (Windows, macOS, Linux), sincronizados en vivo.</li>
+      <li>🔒 Protección por PIN del negocio (opcional, la activamos cuando quieras).</li>
+      <li>📞 Soporte por WhatsApp, Instagram y email, de <strong data-horario>10:00 a 20:00</strong>.</li>
+      <li>🛠 Alta y configuración en colaboración contigo: nombre, menú, precios, tamaños y PIN. Tú nos cuentas cómo es tu negocio y qué vende (da igual si es en persona, por WhatsApp, videollamada o email) y lo montamos juntos de la forma más eficiente.</li>
+      <li>🔑 Gestionamos el acceso: quitar el de un móvil antiguo (pidiendo el PIN) o renovarlo si pierdes el móvil. Tú lo pides, nosotros lo hacemos.</li>
+      <li>💾 Datos respaldados y solo tuyos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · Comparativa -->
+<section class="seccion" id="compara">
+  <h2>¿Y la competencia?</h2>
+  <div class="tabla-envoltura reveal" role="region" aria-label="Comparativa con la competencia" tabindex="0">
+    <table class="compara">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="destacada">Komandi</th>
+          <th>Apps TPV hostelería</th>
+          <th>Carta QR con comisión</th>
+          <th>Delivery</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>Precio</th><td class="destacada">desde 14,99 €/mes</td><td>30–80+ €/mes</td><td>«gratis» + comisión</td><td>15–30 % por pedido</td></tr>
+        <tr><th>Comisión por pedido</th><td class="destacada">No</td><td>No</td><td>Sí</td><td>Sí</td></tr>
+        <tr><th>TPV / terminal nuevo</th><td class="destacada">No</td><td>Suele</td><td>No</td><td>No</td></tr>
+        <tr><th>Comanda cajero → cocina</th><td class="destacada">Sí</td><td>A veces</td><td>No</td><td>No</td></tr>
+        <tr><th>Ticket en cocina en vivo</th><td class="destacada">Sí</td><td>Varía</td><td>No</td><td>No</td></tr>
+        <tr><th>Montaje</th><td class="destacada">10 min</td><td>Horas/días</td><td>Varía</td><td>Semanas</td></tr>
+        <tr><th>Carta editable por el dueño</th><td class="destacada">Sí</td><td>A veces</td><td>Varía</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="nota-compara">Nadie ofrece el combo: tarifa plana baja, sin comisión, sin TPV, comanda cajero → cocina en vivo, carta editable y montaje en 10 minutos.</p>
+</section>
+
+<!-- 9 · Configuración -->
+<section class="seccion" id="config">
+  <div class="config-cuerpo">
+    <div class="config-texto">
+      <h2>Lo configuras tú, desde el móvil</h2>
+      <ul class="config-lista">
+        <li>⚙️ Edita productos, precios y tamaños sin saber programar.</li>
+        <li>🔒 Protección por PIN del negocio: quitamos el acceso a un móvil antiguo (pidiendo el PIN) y renovamos si pierdes el móvil.</li>
+        <li>📞 Soporte por <a data-wa>WhatsApp</a>, <a data-rrss="instagram">Instagram</a> y <a data-email>email</a>, de <strong data-horario>10:00 a 20:00</strong>.</li>
+        <li>🛠 Alta y configuración (nombre, menú, precios, PIN, canales) las montamos en colaboración contigo: tú nos cuentas cómo es tu negocio y lo activamos juntos.</li>
+        <li>💾 Tus datos son tuyos: respaldados y solo los ves tú.</li>
+      </ul>
+    </div>
+    <figure class="tel">
+      <img src="assets/capturas/05-admin.webp" alt="Pantalla de administración editando productos y precios" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="seccion" id="faq">
+  <h2>Preguntas frecuentes</h2>
+  <div class="faq reveal-grupo">
+  <details class="reveal" open>
+    <summary>¿Vale para mi negocio aunque no sea un kebab?</summary>
+    <p>Sí. Sirve para cualquier negocio que tome el pedido en el mostrador y lo pase a cocina: kebab, hamburguesería, pizzería, pollo asado, bocadillería, tacos, comida rápida, food truck… La carta se adapta a lo que vendas.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Cómo pruebo la demo? ¿Cuánto dura?</summary>
+    <p>Es una demo gratuita sin caducidad: entras cuando quieras, es la app real con un menú de ejemplo, funciona en el móvil, la tablet o el PC y no hay que registrarse. Cuando te guste, la montamos con tu carta.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Necesito internet en el negocio?</summary>
+    <p>No para lo básico. La carta, el pedido, el resumen y los precios van incrustados en el dispositivo y funcionan siempre, sin conexión. Si no hay internet, la app pasa sola a <strong>modo local</strong>: sigues tomando pedidos y los envías a cocina, pero la comanda se guarda en <em>ese</em> dispositivo.</p>
+    <p>Esto significa dos cosas:</p>
+    <ul>
+      <li>✅ Si usas un solo dispositivo (o el que tiene el pedido es también el de la cocina), sigues trabajando sin problema mientras no haya red.</li>
+      <li>⚠️ Si la cocina está en otro móvil o tablet y no hay internet, no le llega nada hasta que vuelva la conexión: las comandas quedan guardadas en el dispositivo de caja y se sincronizan al recuperar la red.</li>
+    </ul>
+    <p>Con internet, las pantallas de cajero y cocina se sincronizan en vivo, y puedes ver desde el móvil una comanda tomada en el otro.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Qué móvil o dispositivo necesito?</summary>
+    <p>Cualquiera con Chrome, Safari o Edge: Android, iPhone, tablet, o un PC con Windows, macOS o Linux. Se abre en el navegador y se añade a la pantalla de inicio como una app normal, sin pasar por la tienda de aplicaciones.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Cómo se configura y quién lo hace?</summary>
+    <p>Al darte de alta montamos todo contigo: nombre, menú, precios, tamaños, PIN y enlaces. Tú nos cuentas qué vende tu negocio (en persona si podemos acercarnos, o por WhatsApp, videollamada o email si estás lejos) y te ayudamos a dejarlo bien montado. Después, el menú lo editas tú mismo desde el ⚙️ del móvil. Para activar opciones de configuración (cambiar el PIN, quitar el acceso a un móvil, renovar por pérdida…), nos lo pides y lo hacemos al momento.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Y si hay cosas que no salen en la carta: salsas, extras o recargos?</summary>
+    <p>Es lo habitual. En la carta no siempre aparecen todas las opciones posibles (salsas que se cobran, complementos, tamaños con recargo…), y ahí es donde más ayuda hace falta. Por eso el montaje lo hacemos juntos: te preguntamos por esas cosas que no están escritas, las reflejamos en la app y cobras todo lo que cobras en el mostrador. Si tienes dudas sobre cómo montar algo, te guiamos paso a paso.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Y si me equivoco de precio?</summary>
+    <p>Lo cambias en 10 segundos desde el ⚙️ del móvil y la carta se actualiza al momento en todas las pantallas.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Puedo cambiar el PIN?</summary>
+    <p>Sí, cuando quieras. Además revocamos el acceso de los móviles antiguos al instante, pidiendo el PIN.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Qué pasa si se me pierde o se rompe el móvil?</summary>
+    <p>Nada. Los datos están respaldados. Nos pides la renovación, quitamos el acceso al móvil perdido y abres otro móvil con el PIN de la tienda.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Cómo contacto con soporte?</summary>
+    <p>Por WhatsApp, Instagram o email en horario de <strong data-horario>10:00 a 20:00</strong>. Contestamos rápido y en español.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Y si necesito algo que la app no hace?</summary>
+    <p>Te hacemos presupuesto aparte. Cuéntanos qué necesitas por email o WhatsApp, lo valoramos y te damos un presupuesto cerrado antes de empezar. En la tarjeta de precios tienes una calculadora con un presupuesto aproximado.</p>
+  </details>
+  <details class="reveal">
+    <summary>¿Hay contrato o permanencia?</summary>
+    <p>No. Sin permanencia, sin comisión por pedido y el primer mes es gratis.</p>
+  </details>
+  </div>
+</section>
+
+<!-- 11 · Contacto -->
+<section class="seccion" id="contacto">
+  <h2>Contacta con nosotros</h2>
+  <p class="introduccion">Horario de atención: de <strong data-horario>10:00 a 20:00</strong>.</p>
+  <div class="grid3 contacto reveal-grupo">
+    <a class="card tarjeta-contacto reveal" data-wa>
+      <div class="emoji">💬</div>
+      <h3>WhatsApp</h3>
+      <p data-wa-txt>+34 000 000 000</p>
+    </a>
+    <a class="card tarjeta-contacto reveal" data-rrss="instagram">
+      <div class="emoji">📸</div>
+      <h3>Instagram</h3>
+      <p>@komandi (a crear)</p>
+    </a>
+    <a class="card tarjeta-contacto reveal" data-email>
+      <div class="emoji">✉️</div>
+      <h3>Email</h3>
+      <p data-email-txt>hola@komandi.es</p>
+    </a>
+  </div>
+</section>
+
+<!-- 12 · CTA final -->
+<section class="seccion cta-final">
+  <h2>Demo gratuita, pruébala cuando quieras</h2>
+  <p>Es la app de verdad con un menú de ejemplo: sin registrarte, sin instalar nada y todas las veces que quieras.</p>
+  <div class="ctas reveal-grupo">
+    <a class="btn btn-primario btn-lg reveal" data-demo>▶ Probar gratis</a>
+    <a class="btn btn-borde btn-lg reveal" data-wa>💬 Montar la mía</a>
+  </div>
+  <p class="nota">Cuando la pruebes, dime qué le falta a tu carta y te la monto. Primer mes gratis.</p>
+</section>
+
+<footer class="pie">
+  <div class="pie-marca">
+    <img src="assets/logo.png" alt="" width="32" height="32">
+    <span id="nombre-pie">Komandi</span>
+  </div>
+  <p>Hecho para kebab, hamburgueserías, pizzerías y cualquier comida para llevar. Pregunta por el <strong>primer mes gratis</strong>.</p>
+  <p>
+    <a data-wa>WhatsApp</a> ·
+    <a data-rrss="instagram">Instagram</a> ·
+    <a data-email>Email</a>
+  </p>
+  <p class="pie-url" id="pie-url"></p>
+  <p>© <span id="anio"></span> <span data-nombre></span></p>
+</footer>
+
+<div class="cta-sticky" id="cta-sticky">
+  <a class="btn btn-primario btn-lg" data-demo>▶ Probar gratis</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

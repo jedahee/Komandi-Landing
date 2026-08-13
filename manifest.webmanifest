@@ -1,0 +1,16 @@
+{
+  "name": "Komandi · Comandas de tu negocio",
+  "short_name": "Komandi",
+  "description": "App de comandas para comida para llevar: carta, pedido y ticket a cocina al momento. Sin terminales, sin comisiones.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16100d",
+  "theme_color": "#16100d",
+  "icons": [
+    { "src": "assets/favicon.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/logo-big.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/logo-big.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

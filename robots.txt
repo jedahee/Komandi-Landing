@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /demo/
+Disallow: /assets/
+
+Sitemap: https://TUUSUARIO.github.io/kebapps/sitemap.xml

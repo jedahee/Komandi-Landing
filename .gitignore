@@ -1,0 +1,8 @@
+# Dependencias y temporales
+node_modules/
+*.log
+*.out
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

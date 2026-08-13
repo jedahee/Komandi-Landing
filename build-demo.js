@@ -1,0 +1,46 @@
+'use strict';
+
+/* Genera landing/demo/index.html: la app en un solo archivo, SIN PIN, en una
+ * URL aparte de la landing (la «demo gratuita»).
+ *
+ * - Inyecta los datos de la tienda real de ejemplo (Golden Kebab / kebab-ali)
+ *   en EMBEDDED_DATA, igual que base/build.js, pero para la demo de la landing.
+ * - Elimina los links de PWA/manifest/iconos y el título pasa a «Komandi · Demo».
+ * - La demo NUNCA pide PIN: con EMBEDDED_DATA la app ignora el estado del
+ *   servidor (no hay secret.json ni pareados.json en un archivo estático).
+ * - Es la app de verdad con un menú de ejemplo: se puede probar siempre que se
+ *   quiera, en móvil, tablet o PC.
+ *
+ * Uso: node build-demo.js
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.join(__dirname, '..', 'base');
+const DATOS_EJEMPLO = path.join(ROOT, '..', 'kebab-cantillana', 'kebab-ali', 'datos', 'productos.json');
+const SALIDA = path.join(__dirname, 'demo', 'index.html');
+
+const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+const css = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');
+let js = fs.readFileSync(path.join(ROOT, 'app.js'), 'utf8');
+const json = fs.readFileSync(DATOS_EJEMPLO, 'utf8');
+
+const literal = json.replace(/<\//g, '<\\/');
+js = js.replace('const EMBEDDED_DATA = null;', 'const EMBEDDED_DATA = ' + literal + ';');
+
+const salida = html
+  .replace(/<link rel="manifest"[^>]*>\n/g, '')
+  .replace(/<link rel="icon"[^>]*>\n/g, '')
+  .replace(/<link rel="apple-touch-icon"[^>]*>\n/g, '')
+  .replace('<link rel="stylesheet" href="styles.css">', '<style>\n' + css + '\n</style>')
+  .replace('<title>Komandi · Cuentas</title>', '<title>Komandi · Demo</title>')
+  .replace('<script src="app.js"></script>', '<script>\n' + js + '\n</script>');
+
+fs.mkdirSync(path.dirname(SALIDA), { recursive: true });
+fs.writeFileSync(SALIDA, salida);
+
+console.log('✓ Generado: ' + SALIDA);
+console.log('  Tamaño: ' + (salida.length / 1024).toFixed(1) + ' KB');
+console.log('  Demo SIN PIN: con datos incrustados la app nunca pide el código.');
+console.log('  Sube esta carpeta con la landing: la demo quedará en ' + path.join('landing', 'demo', '') + ' (URL aparte).');
